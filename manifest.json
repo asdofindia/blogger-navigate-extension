@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Blogger Navigate",
+    "version": "0.0.1",
+    "description": "Find and click next page on blogger",
+    "icons": {
+        "64": "assets/right-arrow.png"
+    },
+    "permissions": [
+        "*://*.blogspot.com/*"
+    ],
+    "background": {
+        "scripts": [
+            "js/background.js"
+        ]
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "blogger-navigate@free.gen.in",
+            "update_url": "https://learnlearn.in/projects/updates.json"
+        }
+    },
+    "page_action": {
+        "default_icon": "assets/right-arrow.png",
+        "default_title": "Next post",
+        "show_matches": ["*://*.blogspot.com/*"]
+    }
+}
